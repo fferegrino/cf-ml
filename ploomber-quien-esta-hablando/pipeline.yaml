@@ -1,0 +1,45 @@
+tasks:
+  - name: download-transcripts
+    source: data/download-transcripts.sh
+    product: outputs/transcripts
+
+  - name: extract-dialogs
+    source: processing/extract_dialogs.py
+    product: 
+      nb: extract_dialogs.ipynb
+      dialogs: outputs/dialogs.csv
+
+  - name: split
+    source: processing.data_preparation.split
+    product:
+      train: outputs/train.csv
+      test: outputs/test.csv
+      val: outputs/val.csv
+
+  - name: binary-target
+    source: processing.data_preparation.binarize_target
+    product:
+      train_y: outputs/train_y.txt
+      val_y: outputs/val_y.txt
+
+  - name: tokenised-text
+    source: processing.text.tokenise_text
+    product:
+      train_x: outputs/train_x.npz
+      val_x: outputs/val_x.npz
+      vectoriser: outputs/vectoriser.pickle
+
+  - name: model
+    source: modelling/model.py
+    product:
+      nb: outputs/model.ipynb
+      model: outputs/model.pickle
+
+  # - source: 2-clean.py
+  #   product:
+  #     nb: output/2-clean.ipynb
+  #     data: output/clean.csv
+
+  # - source: 3-plot.py
+  #   product:
+  #     nb: output/3-plot.ipynb

@@ -1,0 +1,7 @@
+ploomber
+kaggle
+mananeras
+unidecode
+scikit-learn
+nltk
+pygraphviz
