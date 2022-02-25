@@ -24,13 +24,11 @@ def tokenise(sentence):
     return clean
 
 def tokenise_text(upstream, product):
-    test = pd.read_csv(upstream["split"]["test"])
     val = pd.read_csv(upstream["split"]["val"])
     train = pd.read_csv(upstream["split"]["train"])
 
     dialogs_train = train["dialog"]
     dialogs_val = val["dialog"]
-    dialogs_test = test["dialog"]
 
     vectoriser = CountVectorizer(
         binary=True, 
@@ -38,11 +36,9 @@ def tokenise_text(upstream, product):
         max_features=1000)
 
     train_x = vectoriser.fit_transform(dialogs_train)
-    test_x = vectoriser.transform(dialogs_test)
     val_x = vectoriser.transform(dialogs_val)
 
     save_npz(product["train_x"], train_x)
-    save_npz(product["test_x"], test_x)
     save_npz(product["val_x"], val_x)
 
     with open(product["vectoriser"], "wb") as wb:

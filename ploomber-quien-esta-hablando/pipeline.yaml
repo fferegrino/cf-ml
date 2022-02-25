@@ -6,7 +6,7 @@ tasks:
   - name: extract-dialogs
     source: processing/extract_dialogs.py
     product: 
-      nb: extract_dialogs.ipynb
+      nb: outputs/extract_dialogs.ipynb
       dialogs: outputs/dialogs.csv
 
   - name: split
@@ -17,7 +17,7 @@ tasks:
       val: outputs/val.csv
 
   - name: binary-target
-    source: processing.data_preparation.binarize_target
+    source: processing.data_preparation.binarise_target
     product:
       train_y: outputs/train_y.txt
       val_y: outputs/val_y.txt
@@ -35,11 +35,7 @@ tasks:
       nb: outputs/model.ipynb
       model: outputs/model.pickle
 
-  # - source: 2-clean.py
-  #   product:
-  #     nb: output/2-clean.ipynb
-  #     data: output/clean.csv
 
-  # - source: 3-plot.py
-  #   product:
-  #     nb: output/3-plot.ipynb
+  - name: validation
+    source: modelling/validation.py
+    product: outputs/validation.ipynb
