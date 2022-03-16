@@ -36,6 +36,8 @@ def train(dataset_path, max_features, binary, max_iter, class_weight, verbose):
     if verbose:
         logging.basicConfig(level=logging.INFO, format="%(message)s")
 
+    mlflow.set_experiment("Quien está hablando?")
+    mlflow.start_run()
     mlflow.log_params(
         {
             "dataset_path": dataset_path,
@@ -103,6 +105,8 @@ def train(dataset_path, max_features, binary, max_iter, class_weight, verbose):
     with open("model.pkl", "wb") as wb:
         pickle.dump(lr, wb)
         mlflow.log_artifact("model.pkl", "model")
+
+    mlflow.end_run()
 
 
 if __name__ == "__main__":
