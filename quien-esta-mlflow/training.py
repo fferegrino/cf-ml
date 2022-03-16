@@ -98,9 +98,11 @@ def train(dataset_path, max_features, binary, max_iter, class_weight, verbose):
 
     with open("vectorizer.pkl", "wb") as wb:
         pickle.dump(vectorizador_real, wb)
+        mlflow.log_artifact("vectorizer.pkl", "vectorizer")
 
     with open("model.pkl", "wb") as wb:
         pickle.dump(lr, wb)
+        mlflow.log_artifact("model.pkl", "model")
 
 
 if __name__ == "__main__":
