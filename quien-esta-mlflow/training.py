@@ -106,6 +106,7 @@ def train(dataset_path, max_features, binary, max_iter, class_weight, verbose):
     with open("model.pkl", "wb") as wb:
         pickle.dump(lr, wb)
         mlflow.log_artifact("model.pkl", "model")
+        mlflow.register_model("model/model.plk", "QuienEstaHablando")
 
     mlflow.end_run()
 
