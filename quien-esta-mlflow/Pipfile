@@ -11,6 +11,7 @@ unidecode = "*"
 nltk = "*"
 mlflow = "*"
 click = "*"
+boto3 = "*"
 
 [dev-packages]
 jupyter = "*"
