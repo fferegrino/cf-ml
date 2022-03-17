@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy = "*"
+scikit-learn = "*"
+mananeras = "*"
+unidecode = "*"
+nltk = "*"
+mlflow = "*"
+click = "*"
+boto3 = "*"
+
+[dev-packages]
+jupyter = "*"
+jupyterlab = "*"
+matplotlib = "*"
+seaborn = "*"
+
+[requires]
+python_version = "3.8"

@@ -1,0 +1,88 @@
+# Thanks to Emily Gorcenski
+# https://www.emilygorcenski.com/post/configuring-a-data-science-workbench
+
+version: "3.8"
+
+services:
+  db:
+    restart: always
+    image: postgres:12.10
+    container_name: mlflow_db
+    expose:
+      - "${PG_PORT}"
+    networks:
+      - backend
+    environment:
+      - POSTGRES_USER=${PG_USER}
+      - POSTGRES_PASSWORD=${PG_PASSWORD}
+      - POSTGRES_DB=${PG_DATABASE}
+    volumes:
+      - db_data:/var/lib/postgresql/data/
+
+  s3:
+    image: minio/minio:RELEASE.2020-12-18T03-27-42Z
+    volumes:
+      - minio_data:/data
+    ports:
+      - "${MINIO_PORT}:9000"
+    networks:
+      - frontend
+      - backend
+    environment:
+      - MINIO_ACCESS_KEY=${MINIO_ACCESS_KEY}
+      - MINIO_SECRET_KEY=${MINIO_SECRET_ACCESS_KEY}
+    command: server /data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+  create_buckets:
+    image: minio/mc:RELEASE.2019-07-17T22-13-42Z
+    depends_on:
+      - s3
+    networks:
+      - backend
+    entrypoint: >
+      /bin/sh -c '
+      sleep 5;
+      /usr/bin/mc config host add s3 http://s3:${MINIO_PORT} ${MINIO_ACCESS_KEY} ${MINIO_SECRET_ACCESS_KEY} --api S3v4;
+      [[ ! -z "`/usr/bin/mc ls s3 | grep challenge`" ]] || /usr/bin/mc mb s3/${MLFLOW_BUCKET_NAME};
+      /usr/bin/mc policy download s3/${MLFLOW_BUCKET_NAME};
+      [[ ! -z "`/usr/bin/mc ls s3 | grep challenge`" ]] || /usr/bin/mc mb s3/${DATA_REPO_BUCKET_NAME};
+      /usr/bin/mc policy download s3/${DATA_REPO_BUCKET_NAME};
+      exit 0;
+      '
+
+  tracking_server:
+    depends_on:
+      - db
+    restart: always
+    build: ./mlflow
+    image: gorcenski/mlflow-scratch
+    container_name: mlflow_server
+    ports:
+      - "${MLFLOW_PORT}:5000"
+    networks:
+      - frontend
+      - backend
+    environment:
+      - AWS_ACCESS_KEY_ID=${MINIO_ACCESS_KEY}
+      - AWS_SECRET_ACCESS_KEY=${MINIO_SECRET_ACCESS_KEY}
+      - MLFLOW_S3_ENDPOINT_URL=http://s3:${MINIO_PORT}
+    command: >
+      mlflow server
+      --backend-store-uri postgresql://${PG_USER}:${PG_PASSWORD}@db:${PG_PORT}/${PG_DATABASE}
+      --host 0.0.0.0
+      --default-artifact-root s3://mlflow/
+
+volumes:
+  db_data:
+  minio_data:
+
+networks:
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge
