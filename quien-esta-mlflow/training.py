@@ -8,6 +8,7 @@ from sklearn.model_selection import train_test_split
 from text_processing import tokenize
 import logging
 import pickle
+import mlflow
 
 logger = logging.getLogger("training")
 
@@ -34,6 +35,16 @@ def split_dataset(dialogs):
 def train(dataset_path, max_features, binary, max_iter, class_weight, verbose):
     if verbose:
         logging.basicConfig(level=logging.INFO, format="%(message)s")
+
+    mlflow.log_params(
+        {
+            "dataset_path": dataset_path,
+            "vectoriser_max_features": max_features,
+            "vectoriser_binary": binary,
+            "lr_max_iter": max_iter,
+            "lr_class_weight": class_weight,
+        }
+    )
 
     logger.debug("loaded dataset")
     dataset = load_data(dataset_path)
@@ -76,6 +87,14 @@ def train(dataset_path, max_features, binary, max_iter, class_weight, verbose):
     test_pred = lr.predict(test_x)
     test_accuracy = accuracy_score(test_y, test_pred)
     print(f"Test accuracy:   {test_accuracy:0.2%}")
+
+    mlflow.log_metrics(
+        {
+            "training_accuracy": training_accuracy,
+            "validation_accuracy": validation_accuracy,
+            "test_accuracy": test_accuracy,
+        }
+    )
 
     with open("vectorizer.pkl", "wb") as wb:
         pickle.dump(vectorizador_real, wb)

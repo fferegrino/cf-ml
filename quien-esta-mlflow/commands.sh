@@ -8,3 +8,4 @@ python training.py dialogos.csv 500 true 1000 balanced
 python training.py dialogos.csv 1500 true 1500 balanced
 
 # ...
+mlflow ui
