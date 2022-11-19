@@ -5,3 +5,4 @@ pandas
 pandas-profiling
 scikit-learn
 seaborn
+xgboost
