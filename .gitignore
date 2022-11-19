@@ -3,6 +3,13 @@
 profile_default/
 ipython_config.py
 
+__pycache__/
+*.py[cod]
+*$py.class
+
 .idea/
 .venv/
 
+.DS_Store
+*.pickle
+*.html
