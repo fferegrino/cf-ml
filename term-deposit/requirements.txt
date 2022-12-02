@@ -1,0 +1,8 @@
+jupyter
+jupyterlab
+openpyxl
+pandas
+pandas-profiling
+scikit-learn
+seaborn
+xgboost
