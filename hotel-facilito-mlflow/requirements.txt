@@ -1,0 +1,5 @@
+pandas==2.0.1
+scikit-learn==1.2.2
+jupyter==1.0.0
+jupyterlab==4.0.0
+mlflow
