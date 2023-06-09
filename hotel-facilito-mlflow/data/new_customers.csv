@@ -1,0 +1,101 @@
+hotel,is_canceled,lead_time,arrival_date_year,arrival_date_month,arrival_date_week_number,arrival_date_day_of_month,stays_in_weekend_nights,stays_in_week_nights,adults,children,babies,meal,country,market_segment,distribution_channel,is_repeated_guest,previous_cancellations,previous_bookings_not_canceled,reserved_room_type,assigned_room_type,booking_changes,deposit_type,agent,company,days_in_waiting_list,customer_type,adr,required_car_parking_spaces,total_of_special_requests,name,email,phone-number,credit_card
+City Hotel,0,0,2016,March,13,22,0,1,2,0.0,0,BB,BEL,Direct,Direct,0,0,0,D,D,0,No Deposit,,,0,Transient,99.0,0,1,Elizabeth Morton,ElizabethMorton@xfinity.com,218-662-6872,************5891
+City Hotel,0,21,2016,March,13,23,0,3,2,0.0,0,BB,AUT,Groups,TA/TO,0,0,0,A,A,0,No Deposit,1.0,,0,Transient-Party,62.0,0,1,Virginia Ward,Virginia_Ward51@gmail.com,845-529-3632,************1071
+City Hotel,0,418,2016,September,40,26,1,2,2,0.0,0,HB,DEU,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,132.0,,223,Transient-Party,107.0,0,0,Joseph Taylor,Joseph_T@protonmail.com,451-454-5767,************5326
+City Hotel,0,58,2016,March,12,17,0,3,2,0.0,0,BB,DEU,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,16.0,,0,Transient,63.0,0,0,Sara Allen,Sara_Allen18@yandex.com,402-581-2687,************8597
+Resort Hotel,0,130,2017,July,28,9,2,0,1,0.0,0,BB,PRT,Online TA,TA/TO,0,0,0,E,E,0,No Deposit,242.0,,0,Transient-Party,178.0,0,1,John Black,Black.John47@yandex.com,541-901-5663,************9017
+City Hotel,1,85,2016,April,16,15,1,2,2,0.0,0,BB,FRA,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,9.0,,0,Transient,96.3,0,0,Jared Curtis,Jared.Curtis@protonmail.com,117-401-0423,************8695
+City Hotel,0,47,2017,June,25,24,2,1,2,1.0,0,BB,CN,Online TA,TA/TO,0,0,0,D,D,0,No Deposit,7.0,,0,Transient,132.55,0,1,Robert Ross,Ross_Robert@aol.com,454-340-1353,************2292
+City Hotel,1,338,2016,October,41,7,1,2,2,0.0,0,BB,PRT,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,12.0,,68,Transient-Party,80.0,0,0,Mr. Jorge Miller MD,Mr.MD@mail.com,969-417-7417,************1290
+City Hotel,1,100,2017,April,16,22,2,2,2,0.0,0,BB,PRT,Offline TA/TO,TA/TO,0,0,0,A,A,0,Non Refund,58.0,,0,Transient,105.0,0,0,Carrie Tanner,Carrie_T77@hotmail.com,392-436-1692,************8415
+City Hotel,0,409,2017,May,22,31,0,3,2,0.0,0,BB,AUS,Groups,TA/TO,0,0,0,A,A,0,No Deposit,229.0,,0,Transient-Party,112.67,0,1,Stephen Scott,Scott_Stephen@protonmail.com,298-861-4692,************3350
+City Hotel,0,24,2016,November,47,18,0,2,2,0.0,0,BB,PRT,Complementary,Direct,0,0,0,A,A,0,No Deposit,,,0,Transient,0.0,0,1,Paul Ross,Paul.R@hotmail.com,582-583-7120,************1800
+Resort Hotel,0,5,2017,April,14,7,0,1,2,0.0,0,BB,CPV,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,240.0,,0,Transient,85.0,0,1,Ashley Smith,Smith_Ashley@att.com,657-721-1933,************2042
+City Hotel,1,30,2016,June,24,8,2,9,2,0.0,0,BB,AGO,Online TA,TA/TO,0,0,0,D,D,0,No Deposit,9.0,,0,Transient,138.93,0,0,Kendra Estrada,Estrada.Kendra@verizon.com,282-374-0362,************9288
+City Hotel,0,48,2016,November,45,4,0,2,2,0.0,0,BB,ESP,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,9.0,,0,Transient,97.2,0,2,Bradley Martin,Bradley.M@protonmail.com,626-718-7237,************3833
+Resort Hotel,0,35,2015,November,45,6,2,7,1,0.0,0,BB,AUT,Corporate,Corporate,0,0,0,E,E,2,No Deposit,185.0,281.0,0,Transient-Party,52.2,1,0,Marilyn Campbell,MCampbell@aol.com,764-848-1505,************3476
+City Hotel,0,6,2015,December,50,10,0,2,1,0.0,0,HB,DEU,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,6.0,,0,Transient-Party,0.0,0,0,Troy Vargas,Vargas_Troy@verizon.com,532-506-6189,************5556
+Resort Hotel,0,13,2017,May,20,14,2,5,2,0.0,0,BB,DEU,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,241.0,,0,Transient,68.4,0,1,Scott Pearson,SPearson34@protonmail.com,709-274-6899,************7751
+City Hotel,0,10,2017,August,32,12,2,2,2,0.0,0,BB,CN,Direct,Direct,0,0,0,B,A,1,No Deposit,,,0,Transient-Party,99.0,0,0,Gary Cooke,Gary.C27@yahoo.com,677-625-3346,************7090
+Resort Hotel,1,27,2016,October,43,16,2,0,2,0.0,0,BB,PRT,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,184.0,,0,Transient,57.0,0,0,Patrick Coleman,Coleman_Patrick@gmail.com,261-769-5487,************5779
+City Hotel,0,176,2017,April,15,14,2,2,2,0.0,0,HB,RUS,Groups,TA/TO,0,0,0,A,A,0,No Deposit,2.0,,0,Transient-Party,113.0,0,1,Vickie Payne,Payne.Vickie@yahoo.com,331-230-3071,************2094
+City Hotel,0,6,2016,April,17,20,0,2,1,0.0,0,BB,PRT,Aviation,Corporate,0,0,0,A,A,1,No Deposit,,153.0,0,Transient,95.0,0,0,Katie Moore,Katie.Moore45@gmail.com,201-147-4602,************6946
+Resort Hotel,0,289,2015,November,47,20,1,2,2,0.0,0,HB,GBR,Groups,TA/TO,0,0,0,A,A,0,No Deposit,134.0,,0,Transient-Party,57.0,0,0,Gerald Blackburn,Gerald_B19@yandex.com,882-451-4283,************9564
+Resort Hotel,1,335,2017,July,30,29,2,5,2,0.0,0,HB,CHE,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,240.0,,0,Transient,167.18,0,2,Martin Valenzuela,Martin.Valenzuela@hotmail.com,165-579-5602,************8995
+City Hotel,1,41,2016,September,38,14,0,2,2,0.0,0,BB,PRT,Groups,TA/TO,0,0,0,A,A,0,No Deposit,86.0,,0,Transient-Party,130.0,0,0,Andre Smith,ASmith@yahoo.com,427-675-7833,************5926
+City Hotel,0,32,2017,February,7,17,1,2,2,0.0,0,BB,FRA,Offline TA/TO,TA/TO,0,0,0,A,D,0,No Deposit,28.0,,0,Transient,75.0,0,0,Desiree Salazar,Desiree.S19@comcast.net,177-743-9832,************7491
+City Hotel,1,23,2016,December,50,4,2,0,1,0.0,0,BB,ESP,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,9.0,,0,Transient,96.0,0,1,David Small,David_Small70@gmail.com,429-167-6765,************6341
+City Hotel,1,162,2017,May,18,6,2,1,1,0.0,0,BB,PRT,Groups,TA/TO,0,0,0,A,A,0,Non Refund,3.0,,0,Transient,80.0,0,0,Justin Taylor,Justin_Taylor27@verizon.com,335-560-0061,************2508
+City Hotel,1,16,2015,August,32,8,2,2,2,0.0,0,BB,PRT,Groups,TA/TO,0,0,0,A,A,0,No Deposit,1.0,,0,Transient-Party,62.0,0,0,Gabriella Kelly,Kelly_Gabriella@comcast.net,986-818-2897,************6905
+City Hotel,1,350,2016,June,25,17,0,2,2,0.0,0,BB,PRT,Groups,TA/TO,0,0,0,A,A,0,Non Refund,29.0,,0,Transient,140.0,0,0,James Henson,Henson.James@verizon.com,161-506-7759,************4425
+City Hotel,0,215,2016,November,48,21,1,1,1,0.0,0,BB,ESP,Groups,Corporate,0,0,0,A,D,1,No Deposit,,233.0,0,Transient,75.0,0,0,Jeffrey Foster,Jeffrey.F@verizon.com,893-693-3228,************9878
+City Hotel,0,20,2017,March,9,2,0,3,2,0.0,0,SC,GBR,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,9.0,,0,Transient,88.0,0,1,Chad Delgado,Chad.D@outlook.com,112-926-6475,************8837
+City Hotel,0,28,2017,April,17,29,1,1,2,0.0,0,SC,ESP,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,9.0,,0,Transient,124.0,0,1,Ashley Carr,Ashley_Carr@protonmail.com,460-368-8355,************9678
+City Hotel,1,153,2017,June,25,21,0,4,1,0.0,0,BB,PRT,Corporate,TA/TO,0,0,0,A,A,0,Non Refund,,348.0,0,Transient,110.0,0,0,Renee Reed,Reed_Renee@yandex.com,970-325-8809,************2101
+City Hotel,1,38,2016,September,39,24,2,5,2,0.0,0,BB,DEU,Online TA,TA/TO,0,0,0,D,D,0,No Deposit,9.0,,0,Transient,146.96,0,0,William Proctor,Proctor.William@att.com,933-428-9656,************1209
+City Hotel,0,56,2017,March,13,29,1,4,2,0.0,0,BB,PRT,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,8.0,,0,Transient,99.28,0,1,Jillian Rodriguez,Jillian.Rodriguez@protonmail.com,194-235-4034,************1666
+City Hotel,1,84,2015,November,48,27,1,2,2,0.0,0,BB,PRT,Groups,TA/TO,0,0,0,A,A,0,No Deposit,1.0,,0,Transient-Party,64.0,0,0,Stephen Horn,Stephen_H@aol.com,202-210-9339,************5308
+Resort Hotel,0,0,2016,June,25,16,0,1,2,0.0,0,BB,PRT,Direct,Direct,0,0,0,A,A,1,No Deposit,,,0,Transient,99.0,1,0,Jason Heath,JasonHeath@verizon.com,143-686-2806,************3375
+City Hotel,0,27,2016,January,4,19,1,5,1,0.0,0,BB,GBR,Direct,Direct,0,0,0,E,E,0,No Deposit,14.0,,0,Transient,122.0,0,0,Timothy Watson,Timothy_Watson73@comcast.net,974-472-6861,************3133
+City Hotel,0,359,2016,October,42,14,2,3,2,0.0,0,BB,DEU,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,21.0,,0,Transient-Party,78.0,0,1,Brenda Moss,Brenda_Moss78@aol.com,136-754-5748,************7501
+City Hotel,0,0,2016,August,35,27,0,1,2,2.0,1,BB,FRA,Online TA,TA/TO,0,0,0,F,F,1,No Deposit,9.0,,0,Transient,168.3,0,2,Veronica Rodriguez,Rodriguez.Veronica@yahoo.com,613-905-3677,************7203
+City Hotel,1,104,2016,October,41,6,2,5,2,0.0,0,SC,GBR,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,9.0,,0,Transient,108.0,0,0,Bryan Fitzpatrick,Bryan_Fitzpatrick@yahoo.com,601-411-5278,************2311
+City Hotel,1,34,2017,January,3,18,0,1,2,0.0,0,BB,PRT,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,19.0,,0,Transient-Party,75.0,0,0,Tyler Watkins,Tyler.Watkins41@verizon.com,141-459-4469,************7655
+City Hotel,0,265,2016,June,26,24,0,2,2,0.0,0,HB,DEU,Offline TA/TO,TA/TO,0,0,0,A,D,0,No Deposit,6.0,,0,Transient-Party,115.0,0,1,Sara Cunningham,Sara.Cunningham@protonmail.com,903-068-7108,************4170
+City Hotel,1,263,2016,October,43,21,0,2,2,0.0,0,BB,PRT,Offline TA/TO,TA/TO,0,0,0,A,A,0,Non Refund,31.0,,0,Transient,110.0,0,0,Joseph Lawson,Joseph_L@hotmail.com,166-493-3428,************9723
+City Hotel,0,107,2016,June,24,10,0,2,2,0.0,0,BB,PRT,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,187.0,,0,Transient-Party,130.0,0,1,Christopher Decker,Decker.Christopher@outlook.com,221-927-8942,************5616
+City Hotel,0,104,2016,December,52,23,2,5,2,0.0,0,BB,DNK,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,7.0,,0,Transient,71.9,0,1,Kristy Jordan,Kristy_Jordan@aol.com,593-099-9642,************4648
+Resort Hotel,1,78,2015,October,41,9,1,2,2,0.0,0,FB,ESP,Groups,TA/TO,0,0,0,A,A,0,Non Refund,134.0,,0,Transient,92.0,0,0,Katelyn Jones,KatelynJones90@gmail.com,323-339-3265,************7511
+Resort Hotel,0,2,2017,February,6,10,0,1,2,0.0,0,BB,PRT,Direct,Direct,0,0,0,A,D,0,No Deposit,,,0,Transient,55.0,1,2,Catherine Johnson,CJohnson@gmail.com,470-272-4962,************5694
+City Hotel,0,2,2016,December,52,18,1,0,1,0.0,0,BB,CHN,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,9.0,,0,Transient,89.5,0,2,Allison Crawford,Allison_C@gmail.com,105-077-1702,************9122
+Resort Hotel,0,383,2016,October,41,6,0,3,1,0.0,0,BB,GBR,Groups,TA/TO,0,0,0,A,A,1,No Deposit,315.0,,0,Transient-Party,48.0,0,0,Glen Martin,Glen.M@comcast.net,268-674-3356,************3663
+City Hotel,0,95,2017,April,17,25,0,4,2,0.0,0,HB,FRA,Offline TA/TO,TA/TO,0,0,0,A,D,0,No Deposit,28.0,,0,Transient,115.0,0,0,Caitlin Foster,Caitlin_Foster99@att.com,553-462-5369,************7562
+City Hotel,0,53,2016,October,42,14,0,1,1,0.0,0,BB,ESP,Offline TA/TO,TA/TO,0,0,0,A,D,0,No Deposit,77.0,,0,Transient-Party,120.0,0,0,Terry Ramirez DDS,Terry.DDS@comcast.net,168-047-1988,************4322
+Resort Hotel,0,15,2016,March,13,22,0,2,2,0.0,0,BB,ESP,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,196.0,,0,Transient,30.0,0,1,Danny Summers,DannySummers@hotmail.com,634-092-4481,************1601
+Resort Hotel,1,237,2017,May,18,3,0,1,2,0.0,0,HB,RUS,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,240.0,,0,Transient-Party,92.0,0,0,Traci Smith,Traci_Smith@verizon.com,610-842-6627,************1279
+Resort Hotel,0,1,2017,February,7,14,0,1,1,0.0,0,BB,CAF,Online TA,TA/TO,0,0,0,A,D,0,No Deposit,240.0,,0,Transient-Party,55.0,0,1,Christopher Willis,Willis.Christopher@zoho.com,121-376-1680,************5407
+City Hotel,0,114,2017,February,7,15,0,4,2,0.0,0,BB,ESP,Groups,TA/TO,0,0,0,A,A,0,No Deposit,,242.0,0,Transient-Party,78.0,0,0,Robert Kline,Robert.Kline@outlook.com,796-935-2949,************1000
+City Hotel,1,122,2016,May,20,11,0,1,2,0.0,0,BB,RUS,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,9.0,,0,Transient,105.3,0,0,Timothy Hill,TimothyHill@yahoo.com,696-487-5069,************8414
+Resort Hotel,1,311,2017,June,26,25,2,5,2,2.0,0,BB,IRL,Online TA,TA/TO,0,0,0,G,G,0,No Deposit,240.0,,0,Transient,151.14,0,2,Nicholas Doyle,NDoyle@protonmail.com,344-642-0763,************2988
+City Hotel,1,188,2016,June,25,15,0,2,1,0.0,0,BB,PRT,Offline TA/TO,TA/TO,0,0,0,A,A,0,Non Refund,119.0,,39,Transient,130.0,0,0,Cory Alexander,CoryAlexander@att.com,864-688-3246,************2633
+City Hotel,1,10,2017,January,4,27,0,2,2,0.0,0,BB,PRT,Offline TA/TO,TA/TO,0,0,0,A,D,0,No Deposit,28.0,,0,Transient,75.0,0,0,Jamie Contreras,Contreras_Jamie@yahoo.com,688-161-1520,************5951
+Resort Hotel,0,44,2016,November,47,15,0,2,2,0.0,0,BB,GBR,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,240.0,,0,Transient,37.8,0,2,Brandon Delgado,Brandon.Delgado@yandex.com,560-927-0003,************7368
+City Hotel,1,16,2015,December,52,24,0,3,1,1.0,0,BB,PRT,Direct,Direct,1,1,0,A,A,0,No Deposit,14.0,,0,Transient,67.5,0,1,Lindsey Johnson,Lindsey.Johnson@yandex.com,992-650-9994,************7789
+City Hotel,0,457,2017,August,34,25,0,2,2,0.0,0,HB,DEU,Offline TA/TO,TA/TO,0,0,0,A,A,1,No Deposit,6.0,,0,Transient-Party,122.4,0,1,Eric Bowman,Eric_B42@gmail.com,316-841-9485,************9147
+Resort Hotel,1,72,2016,February,6,6,2,1,2,0.0,0,HB,PRT,Groups,Direct,0,0,0,D,D,0,No Deposit,,,0,Transient-Party,73.33,0,0,Deanna Jenkins,DeannaJenkins23@verizon.com,229-507-3138,************2808
+City Hotel,1,96,2017,April,17,26,0,2,2,0.0,0,BB,PRT,Groups,TA/TO,0,0,0,A,A,0,Non Refund,29.0,,0,Transient,130.0,0,0,Daniel Ortiz,Ortiz_Daniel22@protonmail.com,960-672-0720,************5797
+City Hotel,0,143,2016,July,29,13,0,1,1,2.0,0,BB,PRT,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,7.0,,0,Transient,106.03,0,0,Elizabeth Walker,EWalker@protonmail.com,952-726-0848,************8516
+Resort Hotel,0,9,2017,May,20,19,0,2,1,0.0,0,BB,ESP,Online TA,TA/TO,0,0,0,A,A,2,No Deposit,240.0,,0,Transient,95.5,0,1,Katrina Ramos,Katrina.Ramos@yahoo.com,935-327-9955,************4109
+Resort Hotel,0,89,2015,August,34,22,4,6,2,0.0,0,BB,RUS,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,36.0,,0,Transient,104.16,0,1,David Hamilton,David_H96@comcast.net,561-261-5396,************2148
+City Hotel,1,418,2016,September,40,26,1,2,2,0.0,0,BB,PRT,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,21.0,,223,Transient-Party,75.0,0,0,Chris Short,Short.Chris@hotmail.com,697-731-6348,************4629
+Resort Hotel,0,90,2015,August,34,16,2,4,2,0.0,0,BB,ESP,Offline TA/TO,TA/TO,0,0,0,A,A,0,No Deposit,15.0,,0,Transient-Party,107.0,0,1,Peter Shaw,Peter_S@xfinity.com,706-588-5942,************5736
+Resort Hotel,0,222,2016,April,14,2,2,5,2,0.0,0,BB,GBR,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,241.0,,0,Transient,42.19,0,2,Jose Blake,JoseBlake@verizon.com,730-023-5457,************8277
+City Hotel,0,138,2016,May,19,7,0,1,2,0.0,0,BB,ESP,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,9.0,,0,Transient,114.3,1,1,Christopher Johnson,Johnson.Christopher@aol.com,847-314-0369,************9511
+City Hotel,1,71,2016,June,25,14,0,3,1,0.0,0,BB,PRT,Offline TA/TO,TA/TO,0,0,0,A,A,0,Non Refund,236.0,,0,Transient,120.0,0,0,Thomas Mills,Thomas_M32@mail.com,756-971-1624,************1172
+Resort Hotel,0,66,2016,November,48,24,2,3,2,0.0,0,BB,POL,Offline TA/TO,TA/TO,0,0,0,A,E,0,No Deposit,336.0,,0,Transient,49.0,0,0,Shawn Bell,Shawn_Bell25@hotmail.com,226-557-1514,************6452
+City Hotel,0,130,2016,May,22,28,1,1,2,0.0,0,BB,DNK,Online TA,TA/TO,0,0,0,D,B,0,No Deposit,9.0,,0,Transient,134.1,1,1,Nicholas Howard,Howard.Nicholas@verizon.com,592-914-8424,************2188
+Resort Hotel,1,47,2016,August,33,7,1,0,3,1.0,0,BB,ITA,Online TA,TA/TO,0,0,0,H,H,0,No Deposit,240.0,,0,Transient,274.0,0,0,Joyce Sanchez,Joyce.Sanchez@aol.com,976-809-3467,************2165
+City Hotel,0,10,2017,March,13,27,1,1,2,0.0,0,BB,ISR,Groups,TA/TO,0,0,0,A,A,0,No Deposit,37.0,,0,Transient-Party,95.0,0,1,Courtney Lopez,CourtneyLopez18@yahoo.com,684-350-6839,************1452
+City Hotel,0,83,2016,May,19,7,2,2,2,0.0,0,BB,NOR,Online TA,TA/TO,0,0,0,A,A,2,No Deposit,9.0,,0,Transient-Party,124.65,0,1,Mary Barry,MBarry25@verizon.com,994-211-4755,************8003
+Resort Hotel,0,52,2017,July,31,31,1,1,2,0.0,0,HB,PRT,Online TA,TA/TO,0,0,0,E,F,0,No Deposit,241.0,,0,Transient,235.6,0,1,Robert Mckenzie,Mckenzie_Robert@protonmail.com,137-080-3583,************8358
+City Hotel,0,35,2017,February,8,19,2,0,2,0.0,0,SC,GBR,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,7.0,,0,Transient,61.6,0,1,Brian Jones,Brian_J@protonmail.com,572-915-1193,************2803
+City Hotel,1,25,2016,November,47,18,2,3,2,1.0,0,HB,BRA,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,9.0,,0,Transient,146.7,0,2,Joanna Lewis,Lewis_Joanna18@hotmail.com,393-226-5680,************6281
+Resort Hotel,0,32,2017,May,18,5,1,2,2,0.0,0,HB,GBR,Offline TA/TO,TA/TO,0,0,0,D,D,0,No Deposit,40.0,,0,Contract,86.5,0,0,Dr. Michelle Fernandez,Dr._Fernandez@comcast.net,822-422-9147,************3901
+City Hotel,0,3,2017,March,11,13,1,1,1,0.0,0,BB,ITA,Aviation,Corporate,0,0,0,A,A,1,No Deposit,,153.0,0,Transient,85.85,0,0,Jesse Keith,JKeith17@protonmail.com,753-451-2030,************6704
+Resort Hotel,0,1,2017,March,13,29,0,1,1,0.0,0,BB,PRT,Corporate,Corporate,1,0,16,A,D,1,No Deposit,,390.0,0,Transient,35.0,0,1,Karen Spears,Spears_Karen@zoho.com,407-483-4136,************6442
+City Hotel,0,15,2017,June,25,21,0,1,1,0.0,0,SC,ITA,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,7.0,,0,Transient,128.0,0,1,Donald Saunders,Saunders.Donald@aol.com,412-957-1315,************5721
+City Hotel,1,28,2016,June,25,13,1,1,2,0.0,0,BB,BRA,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,9.0,,0,Transient,94.35,0,0,Timothy Palmer,TimothyPalmer@aol.com,571-712-3645,************4437
+City Hotel,0,4,2016,August,32,6,0,1,2,0.0,0,SC,ESP,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,9.0,,0,Transient,139.0,0,1,Eric Bartlett,Bartlett_Eric@outlook.com,928-052-0280,************1293
+Resort Hotel,0,272,2017,July,27,6,1,3,2,0.0,0,BB,IRL,Offline TA/TO,TA/TO,0,0,0,D,D,0,No Deposit,6.0,,0,Transient,137.9,0,2,Rebecca Rivers,RebeccaRivers@protonmail.com,386-229-8935,************6146
+Resort Hotel,0,0,2016,February,6,2,0,1,2,0.0,0,BB,PRT,Direct,Direct,0,0,0,F,F,1,No Deposit,,,0,Transient,58.0,0,0,Miranda Perry,Miranda.P@yahoo.com,241-813-7132,************6619
+City Hotel,0,2,2017,August,34,24,0,1,2,0.0,0,BB,MEX,Groups,TA/TO,0,0,0,A,A,0,No Deposit,147.0,,0,Transient-Party,140.0,0,1,Joyce Hess,Hess.Joyce@verizon.com,918-259-7445,************4822
+City Hotel,1,104,2017,May,20,15,1,2,1,0.0,0,BB,PRT,Groups,TA/TO,0,0,0,A,A,0,Non Refund,,,0,Transient,160.0,0,0,Regina Pacheco,Regina.Pacheco@att.com,350-100-9605,************2935
+City Hotel,1,219,2015,September,36,4,1,2,2,0.0,0,BB,PRT,Offline TA/TO,TA/TO,0,1,0,A,A,0,No Deposit,3.0,,0,Transient-Party,80.0,0,0,Donald Alvarez,Donald_A29@mail.com,105-155-9939,************9907
+City Hotel,1,128,2017,April,17,29,2,2,2,0.0,0,BB,BEL,Online TA,TA/TO,0,0,0,D,D,0,No Deposit,9.0,,0,Transient,135.0,0,0,David Nelson,DavidNelson@att.com,831-400-1375,************2333
+Resort Hotel,0,45,2017,August,32,10,1,3,2,0.0,0,HB,ESP,Online TA,TA/TO,0,0,0,A,B,1,No Deposit,240.0,,0,Transient,276.0,0,1,Ivan Ramos,Ivan.Ramos@mail.com,685-056-5331,************7053
+City Hotel,1,211,2016,May,21,20,0,2,2,0.0,0,BB,PRT,Offline TA/TO,TA/TO,0,0,0,A,A,0,Non Refund,6.0,,111,Transient,100.0,0,0,Dennis Reyes,DReyes@outlook.com,398-564-0923,************6258
+City Hotel,0,133,2017,August,31,4,0,2,2,0.0,0,SC,GBR,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,9.0,,0,Transient,135.0,0,0,Crystal Dixon,Crystal_D@protonmail.com,990-309-2540,************9776
+City Hotel,1,18,2016,November,48,20,2,3,2,0.0,0,BB,PRT,Online TA,TA/TO,0,0,0,A,A,0,No Deposit,7.0,,0,Transient,71.21,0,0,Travis Jackson,Travis_Jackson@att.com,973-316-1563,************3241
+Resort Hotel,0,49,2017,March,10,10,0,2,2,0.0,0,BB,PRT,Complementary,Direct,0,0,0,A,A,0,No Deposit,,,0,Transient,0.0,0,0,Kayla Lamb,Kayla_Lamb@aol.com,550-608-8791,************9685
+City Hotel,0,93,2016,November,45,3,0,3,3,0.0,0,BB,FRA,Online TA,TA/TO,0,0,0,D,D,0,No Deposit,9.0,,0,Transient,122.4,0,1,Jeremy Higgins,Jeremy_Higgins88@xfinity.com,505-619-2559,************5269
+City Hotel,0,18,2017,June,24,11,2,2,2,0.0,0,HB,PRT,Online TA,TA/TO,0,0,0,D,D,0,No Deposit,9.0,,0,Transient,177.0,0,1,Autumn Reese,Autumn.Reese@yahoo.com,283-262-1539,************9188
