@@ -1,0 +1,6 @@
+pandas
+scikit-learn
+mlflow
+
+black
+isort
