@@ -19,6 +19,7 @@ from plots import (
     create_learning_curves,
     plot_feature_importance,
 )
+from reports import make_classification_report_frame
 
 output_dir = Path("output")
 output_dir.mkdir(parents=True, exist_ok=True)
@@ -127,25 +128,30 @@ for label in label_encoder.classes_:
     for metric in clf_report[label]:
         mlflow.log_metric(f"{metric}_{label}", clf_report[label][metric])
 
+report_frame = make_classification_report_frame(clf_report, label_encoder.classes_)
+
+mlflow.log_table(report_frame, "classification_report.json")
 
 # Log feature importances
 feature_importance = pd.DataFrame(
     {"feature": X_train_prep.columns, "importance": xgb_model.feature_importances_}
 ).sort_values("importance", ascending=False)
 
+mlflow.log_table(feature_importance, "feature_importance.json")
+
 feature_importance.to_csv(output_dir / "feature_importance.csv", index=False)
 
 feature_importance_fig = plot_feature_importance(feature_importance)
-feature_importance_fig.savefig(output_dir / "feature_importance.png")
+mlflow.log_figure(feature_importance_fig, "feature_importance.png")
 
 # Create confusion matrices for train and test
 confusion_matrix_figure = create_confusion_matrices(label_encoder, y_train, y_pred_train, y_test, y_pred_test)
-confusion_matrix_figure.savefig(output_dir / "confusion_matrix.png")
+mlflow.log_figure(confusion_matrix_figure, "confusion_matrix.png")
 
 # Create a learning curve plot
 learning_curve_figure = create_learning_curves(xgb_model, X_train_prep, y_train)
 
-learning_curve_figure.savefig(output_dir / "learning_curve.png")
+mlflow.log_figure(learning_curve_figure, "learning_curve.png")
 
 print(f"Experiment ID: {run.info.experiment_id}")
 print(f"Run ID: {run.info.run_id}")

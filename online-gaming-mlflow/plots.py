@@ -6,6 +6,19 @@ from sklearn.model_selection import learning_curve
 
 
 def create_confusion_matrices(label_encoder, y_train, y_pred_train, y_test, y_pred_test):
+    """
+    This function creates confusion matrices for the training and testing datasets.
+
+    Parameters:
+    label_encoder (LabelEncoder): The LabelEncoder used for encoding the classes.
+    y_train (array-like): The true labels for the training set.
+    y_pred_train (array-like): The predicted labels for the training set.
+    y_test (array-like): The true labels for the testing set.
+    y_pred_test (array-like): The predicted labels for the testing set.
+
+    Returns:
+    Figure: A matplotlib Figure object with the confusion matrices.
+    """
     fig, ax = plt.subplots(nrows=1, ncols=2)
     cf_train = confusion_matrix(y_train, y_pred_train)
     cf_test = confusion_matrix(y_test, y_pred_test)
@@ -45,6 +58,17 @@ def create_confusion_matrices(label_encoder, y_train, y_pred_train, y_test, y_pr
 
 
 def create_learning_curves(model, x_train, y_train):
+    """
+    This function creates a learning curve plot for a given model.
+
+    Parameters:
+    model (estimator): The model for which the learning curves are to be plotted.
+    x_train (DataFrame): The training data.
+    y_train (array-like): The true labels for the training set.
+
+    Returns:
+    Figure: A matplotlib Figure object with the learning curves.
+    """
     train_sizes, train_scores, test_scores = learning_curve(
         model, x_train, y_train, cv=5, n_jobs=-1, train_sizes=np.linspace(0.1, 1.0, 10)
     )
@@ -68,6 +92,15 @@ def create_learning_curves(model, x_train, y_train):
 
 
 def plot_feature_importance(feature_importance):
+    """
+    This function creates a bar plot for feature importances.
+
+    Parameters:
+    feature_importance (DataFrame): A DataFrame with 'feature' and 'importance' columns.
+
+    Returns:
+    Figure: A matplotlib Figure object with the feature importance plot.
+    """
     fig, ax = plt.subplots(figsize=(10, 6))
     feature_importance.plot(x="feature", y="importance", kind="bar", ax=ax)
     ax.set_title("Feature Importance")
