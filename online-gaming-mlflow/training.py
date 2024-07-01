@@ -37,6 +37,7 @@ online_gaming_behavior_dataset = pd.read_csv("online_gaming_behavior_dataset.csv
 
 data_report = ProfileReport(online_gaming_behavior_dataset, title="Data Report")
 data_report.to_file(output_dir / "data_report.html")
+mlflow.log_artifact(output_dir / "data_report.html")
 
 features = online_gaming_behavior_dataset.drop(columns=["PlayerID", "EngagementLevel"])
 target = online_gaming_behavior_dataset["EngagementLevel"]
@@ -105,9 +106,13 @@ mlflow.log_params({
 #################
 # Save the model and auxiliary objects
 #################
+
 joblib.dump(label_encoder, output_dir / "label_encoder.pkl")
+mlflow.log_artifact(output_dir / "label_encoder.pkl")
 joblib.dump(preprocessor, output_dir / "preprocessor.pkl")
+mlflow.log_artifact(output_dir / "preprocessor.pkl")
 joblib.dump(xgb_model, output_dir / "xgb_model.pkl")
+mlflow.log_artifact(output_dir / "xgb_model.pkl")
 
 #################
 # Evaluate the model
