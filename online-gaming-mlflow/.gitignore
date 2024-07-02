@@ -6,3 +6,4 @@ catboost_info/
 *.pkl
 *.log
 *.txt
+mlruns/

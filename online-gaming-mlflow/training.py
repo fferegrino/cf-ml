@@ -1,6 +1,7 @@
 from pathlib import Path
 
 import joblib
+import mlflow
 import pandas as pd
 from sklearn.compose import ColumnTransformer
 from sklearn.linear_model import LogisticRegression  # noqa
@@ -22,6 +23,15 @@ from plots import (
 output_dir = Path("output")
 output_dir.mkdir(parents=True, exist_ok=True)
 
+mlflow.set_experiment("Online Gaming Behavior - Engagement Level Prediction")
+mlflow.set_experiment_tags(
+    {
+        "project": "Online Gaming Behavior",
+        "task": "Classification",
+    }
+)
+run = mlflow.start_run()
+
 online_gaming_behavior_dataset = pd.read_csv("online_gaming_behavior_dataset.csv")
 
 data_report = ProfileReport(online_gaming_behavior_dataset, title="Data Report")
@@ -33,9 +43,18 @@ target = online_gaming_behavior_dataset["EngagementLevel"]
 split_test_size = 0.2
 split_random_state = 42
 
+mlflow.log_param("split_test_size", split_test_size)
+mlflow.log_param("split_random_state", split_random_state)
+
 X_train, X_test, y_train, y_test = train_test_split(
     features, target, test_size=split_test_size, random_state=split_random_state
 )
+
+
+mlflow.log_param("x_train_shape", X_train.shape)
+mlflow.log_param("x_test_shape", X_test.shape)
+mlflow.log_param("y_train_shape", y_train.shape)
+mlflow.log_param("y_test_shape", y_test.shape)
 
 
 # List features
@@ -77,6 +96,10 @@ xgb_model = XGBClassifier()
 
 xgb_model.fit(X_train_prep, y_train)
 
+mlflow.log_params({
+    f"xgb_{param}": value for param, value in xgb_model.get_params().items()
+})
+
 
 #################
 # Save the model and auxiliary objects
@@ -95,14 +118,14 @@ y_pred_train = xgb_model.predict(X_train_prep)
 test_accuracy = accuracy_score(y_test, y_pred_test)
 train_accuracy = accuracy_score(y_train, y_pred_train)
 
-print(f"Train Accuracy: {train_accuracy:.2f}")
-print(f"Test Accuracy: {test_accuracy:.2f}")
+mlflow.log_metric("train_accuracy", train_accuracy)
+mlflow.log_metric("test_accuracy", test_accuracy)
 
 # Print classification report
 clf_report = classification_report(y_test, y_pred_test, target_names=label_encoder.classes_, output_dict=True)
 for label in label_encoder.classes_:
     for metric in clf_report[label]:
-        print(f"Class {label} ({metric}): {clf_report[label][metric]}")
+        mlflow.log_metric(f"{metric}_{label}", clf_report[label][metric])
 
 
 # Log feature importances
@@ -123,3 +146,6 @@ confusion_matrix_figure.savefig(output_dir / "confusion_matrix.png")
 learning_curve_figure = create_learning_curves(xgb_model, X_train_prep, y_train)
 
 learning_curve_figure.savefig(output_dir / "learning_curve.png")
+
+print(f"Experiment ID: {run.info.experiment_id}")
+print(f"Run ID: {run.info.run_id}")
