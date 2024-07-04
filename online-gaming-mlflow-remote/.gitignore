@@ -8,3 +8,4 @@ catboost_info/
 *.txt
 mlruns/
 !requirements.txt
+artifacts/
