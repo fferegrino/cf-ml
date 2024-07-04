@@ -23,6 +23,7 @@ from reports import make_classification_report_frame
 output_dir = Path("output")
 output_dir.mkdir(parents=True, exist_ok=True)
 
+mlflow.set_tracking_uri("http://localhost:5555")
 
 mlflow.set_experiment("Online Gaming Behavior - Engagement Level Prediction")
 mlflow.set_experiment_tags(
