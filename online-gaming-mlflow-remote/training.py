@@ -3,6 +3,7 @@ from pathlib import Path
 import joblib
 import mlflow
 import pandas as pd
+from mlflow.models import infer_signature
 from sklearn.compose import ColumnTransformer
 from sklearn.linear_model import LogisticRegression  # noqa
 from sklearn.metrics import accuracy_score, classification_report
@@ -112,6 +113,17 @@ joblib.dump(preprocessor, output_dir / "preprocessor.pkl")
 mlflow.log_artifact(output_dir / "preprocessor.pkl")
 joblib.dump(xgb_model, output_dir / "xgb_model.pkl")
 mlflow.log_artifact(output_dir / "xgb_model.pkl")
+
+signature = infer_signature(X_train_prep, xgb_model.predict(X_train_prep))
+
+mlflow.xgboost.log_model(xgb_model, "xgb_model", signature=signature)
+
+model_name = "online-gaming-engagement-level-prediction"
+model_version = mlflow.register_model(
+    model_uri=f"runs:/{run.info.run_id}/xgb_model", 
+    name=model_name
+)
+
 
 #################
 # Evaluate the model
