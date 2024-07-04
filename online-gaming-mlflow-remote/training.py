@@ -3,7 +3,9 @@ from pathlib import Path
 import joblib
 import mlflow
 import pandas as pd
+from mlflow.exceptions import RestException
 from mlflow.models import infer_signature
+from mlflow.tracking import MlflowClient
 from sklearn.compose import ColumnTransformer
 from sklearn.linear_model import LogisticRegression  # noqa
 from sklearn.metrics import accuracy_score, classification_report
@@ -123,6 +125,18 @@ model_version = mlflow.register_model(
     model_uri=f"runs:/{run.info.run_id}/xgb_model", 
     name=model_name
 )
+
+
+client = MlflowClient()
+
+model_alias = "challenger"
+try:
+    client.get_model_version_by_alias(model_name, "champion")
+except RestException as e:
+    print("Champion model not found, tagging the current model as champion")
+    model_alias = "champion"
+
+client.set_registered_model_alias(model_version.name, model_alias, model_version.version)
 
 
 #################
