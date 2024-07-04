@@ -1,0 +1,10 @@
+.venv
+*.joblib
+*.csv
+catboost_info/
+*.png
+*.pkl
+*.log
+*.txt
+mlruns/
+!requirements.txt
