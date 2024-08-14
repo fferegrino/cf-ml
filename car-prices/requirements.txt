@@ -1,0 +1,11 @@
+numpy
+scikit-learn
+mananeras
+unidecode
+nltk
+ydata-profiling
+xgboost
+jupyter
+jupyterlab
+matplotlib
+seaborn
